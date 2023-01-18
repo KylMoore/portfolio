@@ -9,7 +9,7 @@ Quinary: #002947
 Fonts:
 
 Header Font: Cabin Sketch
-Smaller heading: Tillana?
+Sub-header Font: Tillana
 Body Font: work sans
 sans-serif
 

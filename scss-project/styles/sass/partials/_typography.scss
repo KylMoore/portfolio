@@ -1,0 +1,16 @@
+@use "./variables" as *;
+
+body {
+    font-family: $bodyTextFontFamily;
+    font-size: $bodyFontSize;
+}
+
+h1 {
+    font-family: $mainHeadingFontFamily;
+    font-size: $mainHeadingFontSize;
+}
+
+h2 {
+    font-family: $subHeadingsFontFamily;
+    font-size: $subHeadingsFontSize;
+}
