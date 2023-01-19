@@ -247,6 +247,10 @@ html {
   max-width: 1080px;
 }
 
+.about {
+  background-color: #003A66;
+}
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -268,9 +272,19 @@ html {
 .navContainer nav ul li a {
   text-decoration: none;
   color: #000000;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+.navContainer nav ul li a:hover, .navContainer nav ul li a:focus {
+  background-color: #660000;
+  color: #ffffff;
 }
 .navContainer nav ul li button {
   background-color: #006600;
   padding: 0.5rem 1rem;
   border: none;
+  transition: 0.5s;
+}
+.navContainer nav ul li button:hover, .navContainer nav ul li button:focus {
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */

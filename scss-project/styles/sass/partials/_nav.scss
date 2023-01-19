@@ -22,12 +22,27 @@
             a {
                 text-decoration: none;
                 color: $fontPrimaryColor;
+                padding: 0.5rem;
+                transition: 0.5s;
+
+                &:hover,
+                &:focus {
+                    background-color: $primary;
+                    color: $fontSecondaryColor;
+                }
             }
 
             button {
-                background-color: $primary;
+                background-color: $secondary;
                 padding: .5rem 1rem;
                 border: none;
+                transition: 0.5s;
+
+                &:hover, 
+                &:focus {
+                    color: $fontSecondaryColor;
+                    
+                }
             }
         }
     }
