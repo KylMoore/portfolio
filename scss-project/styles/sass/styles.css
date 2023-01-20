@@ -247,8 +247,71 @@ html {
   max-width: 1080px;
 }
 
+.bodyWrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
 .about {
   background-color: #003A66;
+  padding: 4rem 0;
+}
+.about .aboutMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .aboutMeContainer .aboutMeImageContainer {
+  width: 25%;
+}
+.about .aboutMeContainer .aboutMeImageContainer img {
+  width: 3rem;
+  height: 3rem;
+}
+.about .aboutMeContainer .aboutMeInfoContainer {
+  width: 75%;
+}
+
+.skills {
+  background-color: #006600;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+.skills .skillsContainer {
+  display: flex;
+}
+.skills .skillsContainer svg {
+  height: 40px;
+  width: 40px;
+}
+.skills .skillsContainer .skillsHeadingContainer {
+  width: 35%;
+}
+.skills .skillsContainer .skillsListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  text-transform: none;
+}
+.skills .skillsContainer .skillsListContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-direction: column;
+  padding: 0;
+}
+.skills .skillsContainer .skillsListContainer ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: disc;
+  padding: 0 1rem;
+}
+.skills .skillsContainer .skillsListContainer ul li p {
+  text-align: left;
+  margin: 0;
 }
 
 .navContainer {
