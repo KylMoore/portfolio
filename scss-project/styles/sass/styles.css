@@ -314,6 +314,112 @@ html {
   margin: 0;
 }
 
+.projectGallery {
+  display: flex;
+  flex-direction: column;
+}
+.projectGallery li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.projectGallery li .projectImageContainer {
+  width: 35%;
+  padding: 1rem;
+}
+.projectGallery li .projectImageContainer img {
+  max-height: 15rem;
+  max-width: 15rem;
+}
+.projectGallery li .projectContentContainer {
+  width: 65%;
+  padding: 1rem;
+  text-transform: none;
+}
+.projectGallery li .projectContentContainer h3 {
+  margin: 0 auto;
+}
+.projectGallery li .projectContentContainer h4 {
+  color: #002947;
+  margin: 0 auto;
+}
+.projectGallery li .projectContentContainer button {
+  background-color: #006600;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.5s;
+}
+.projectGallery li .projectContentContainer button a {
+  color: black;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+.projectGallery li .projectContentContainer button a:hover, .projectGallery li .projectContentContainer button a:focus {
+  color: #ffffff;
+}
+
+.getInTouch {
+  background-color: #660000;
+  padding: 2.5rem 0;
+}
+
+.getInTouchContainer {
+  display: flex;
+  flex-direction: row;
+}
+.getInTouchContainer .formContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.getInTouchContainer .formContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.getInTouchContainer .formContainer ul li {
+  list-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+}
+.getInTouchContainer .formContainer ul li svg {
+  color: #006600;
+}
+.getInTouchContainer .formInput {
+  width: 100%;
+}
+.getInTouchContainer .formInput form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.getInTouchContainer .formInput form input {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 100%;
+}
+.getInTouchContainer .formInput form button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #006600;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.5s;
+}
+.getInTouchContainer .formInput form button:hover, .getInTouchContainer .formInput form button:focus {
+  color: #ffffff;
+}
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -350,4 +456,13 @@ html {
 }
 .navContainer nav ul li button:hover, .navContainer nav ul li button:focus {
   color: #ffffff;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #006600;
+}
+footer p {
+  padding-left: 0;
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

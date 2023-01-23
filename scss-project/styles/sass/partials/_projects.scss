@@ -1,0 +1,57 @@
+@use "./variables" as *;
+
+.projectGallery {
+    display: flex;
+    flex-direction: column;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+        .projectImageContainer {
+            width: 35%;
+            padding: 1rem;
+
+            img {
+                max-height: 15rem;
+                max-width: 15rem;
+            }
+        }
+
+        .projectContentContainer {
+            width: 65%;
+            padding: 1rem;
+            text-transform: none;
+
+            h3 {
+                margin: 0 auto;
+            }
+
+            h4 {
+                color: $quinary;
+                margin: 0 auto;
+            }
+
+            button {
+                background-color: $secondary;
+                padding: .5rem 1rem;
+                border: none;
+                transition: 0.5s;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    text-transform: lowercase;
+
+                    &:hover,
+                    &:focus {
+                        color: $fontSecondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
