@@ -1,10 +1,9 @@
 Color Scheme:
 
-Primary: #006600
-Secondary: #660000
-Tertiary: #470000
-Quaternary: #003A66
-Quinary: #002947
+$primary: #1E1E2C;
+$secondary: #2D2D44;
+$tertiary: #60C689;
+$quaternary: #33E1ED;
 
 Fonts:
 
