@@ -238,6 +238,7 @@ h2 {
 
 html {
   font-size: 125%;
+  background-color: #1E1E2C;
   text-transform: lowercase;
 }
 
@@ -253,9 +254,15 @@ html {
   max-width: 1080px;
 }
 
+header {
+  background-color: #1E1E2C;
+  color: #ffffff;
+}
+
 .about {
-  background-color: #003A66;
+  background-color: #2D2D44;
   padding: 4rem 0;
+  color: #ffffff;
 }
 .about .aboutMeContainer {
   display: flex;
@@ -274,8 +281,8 @@ html {
 }
 
 .skills {
-  background-color: #006600;
-  color: #ffffff;
+  background-color: #60C689;
+  color: #000000;
   padding: 4rem 0;
 }
 .skills .skillsContainer {
@@ -314,6 +321,11 @@ html {
   margin: 0;
 }
 
+.projects {
+  color: #ffffff;
+  background-color: #1E1E2C;
+}
+
 .projectGallery {
   display: flex;
   flex-direction: column;
@@ -342,26 +354,36 @@ html {
   margin: 0 auto;
 }
 .projectGallery li .projectContentContainer h4 {
-  color: #002947;
+  color: #33E1ED;
   margin: 0 auto;
 }
 .projectGallery li .projectContentContainer button {
-  background-color: #006600;
+  background-color: #33E1ED;
+  color: #000000;
   padding: 0.5rem 1rem;
   border: none;
   transition: 0.5s;
 }
+.projectGallery li .projectContentContainer button:hover, .projectGallery li .projectContentContainer button:focus {
+  color: #ffffff;
+  background-color: #2D2D44;
+}
+.projectGallery li .projectContentContainer button:hover a, .projectGallery li .projectContentContainer button:focus a {
+  color: #ffffff;
+}
 .projectGallery li .projectContentContainer button a {
-  color: black;
+  color: #000000;
   text-decoration: none;
   text-transform: lowercase;
+  transition: 0.5s;
 }
 .projectGallery li .projectContentContainer button a:hover, .projectGallery li .projectContentContainer button a:focus {
   color: #ffffff;
 }
 
 .getInTouch {
-  background-color: #660000;
+  background-color: #2D2D44;
+  color: #ffffff;
   padding: 2.5rem 0;
 }
 
@@ -389,7 +411,7 @@ html {
   margin: 0 auto;
 }
 .getInTouchContainer .formContainer ul li svg {
-  color: #006600;
+  color: #2D2D44;
 }
 .getInTouchContainer .formInput {
   width: 100%;
@@ -411,19 +433,21 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #006600;
+  background-color: #33E1ED;
   padding: 0.5rem 1rem;
   border: none;
   transition: 0.5s;
 }
 .getInTouchContainer .formInput form button:hover, .getInTouchContainer .formInput form button:focus {
   color: #ffffff;
+  background-color: #1E1E2C;
 }
 
 .navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #ffffff;
 }
 .navContainer h2 {
   font-size: 1.5rem;
@@ -440,27 +464,30 @@ html {
 }
 .navContainer nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   padding: 0.5rem;
   transition: 0.5s;
 }
 .navContainer nav ul li a:hover, .navContainer nav ul li a:focus {
-  background-color: #660000;
-  color: #ffffff;
+  background-color: #2D2D44;
+  color: #33E1ED;
 }
 .navContainer nav ul li button {
-  background-color: #006600;
+  background-color: #33E1ED;
+  color: #000000;
   padding: 0.5rem 1rem;
   border: none;
   transition: 0.5s;
 }
 .navContainer nav ul li button:hover, .navContainer nav ul li button:focus {
-  color: #ffffff;
+  color: #33E1ED;
+  background-color: #2D2D44;
 }
 
 footer {
   padding: 1rem;
-  background-color: #006600;
+  color: #ffffff;
+  background-color: #60C689;
 }
 footer p {
   padding-left: 0;

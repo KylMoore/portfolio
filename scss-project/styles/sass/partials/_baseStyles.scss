@@ -1,5 +1,8 @@
+@use "./variables" as *;
+
 html {
     font-size: 125%;
+    background-color: $primary;
     text-transform: lowercase;
 }
 

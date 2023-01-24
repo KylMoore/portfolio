@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $fontPrimaryColor;
 
     h2 {
         font-size: $navFontSize;
@@ -27,21 +28,22 @@
 
                 &:hover,
                 &:focus {
-                    background-color: $primary;
-                    color: $fontSecondaryColor;
+                    background-color: $secondary;
+                    color: $quaternary;
                 }
             }
 
             button {
-                background-color: $secondary;
+                background-color: $quaternary;
+                color: $fontSecondaryColor;
                 padding: .5rem 1rem;
                 border: none;
                 transition: 0.5s;
 
                 &:hover, 
                 &:focus {
-                    color: $fontSecondaryColor;
-                    
+                    color: $quaternary;
+                    background-color: $secondary;
                 }
             }
         }

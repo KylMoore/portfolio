@@ -1,8 +1,9 @@
 @use "./variables" as *;
 
 .about {
-    background-color: $quaternary;
+    background-color: $secondary;
     padding: 4rem 0;
+    color: $fontPrimaryColor;
 
     .aboutMeContainer {
         display: flex;

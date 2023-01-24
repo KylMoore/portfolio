@@ -1,7 +1,8 @@
 @use "./variables" as *;
 
 .getInTouch {
-    background-color: $primary;
+    background-color: $secondary;
+    color: $fontPrimaryColor;
     padding: 2.5rem 0;
 }
 
@@ -54,15 +55,15 @@
                 justify-content: flex-start;
                 align-items: center;
                 width: fit-content;
-                background-color: $secondary;
+                background-color: $quaternary;
                 padding: .5rem 1rem;
                 border: none;
                 transition: 0.5s;
 
                 &:hover,
                 &:focus {
-                    color: $fontSecondaryColor;
-
+                    color: $fontPrimaryColor;
+                    background-color: $primary;
                 }
             }
         }

@@ -1,5 +1,10 @@
 @use "./variables" as *;
 
+.projects {
+    color: $fontPrimaryColor;
+    background-color: $primary;
+}
+
 .projectGallery {
     display: flex;
     flex-direction: column;
@@ -31,24 +36,36 @@
             }
 
             h4 {
-                color: $quinary;
+                color: $quaternary;
                 margin: 0 auto;
             }
 
             button {
-                background-color: $secondary;
+                background-color: $quaternary;
+                color: $fontSecondaryColor;
                 padding: .5rem 1rem;
                 border: none;
                 transition: 0.5s;
 
+                &:hover,
+                &:focus {
+                    color: $fontPrimaryColor;
+                    background-color: $secondary;
+
+                    a {
+                        color: $fontPrimaryColor;
+                    }
+                }
+
                 a {
-                    color: black;
+                    color: $fontSecondaryColor;
                     text-decoration: none;
                     text-transform: lowercase;
+                    transition: 0.5s;
 
                     &:hover,
                     &:focus {
-                        color: $fontSecondaryColor;
+                        color: $fontPrimaryColor;
                     }
                 }
             }
