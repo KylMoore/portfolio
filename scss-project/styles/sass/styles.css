@@ -257,11 +257,32 @@ html {
 header {
   background-color: #1E1E2C;
   color: #ffffff;
+  padding: 2.5rem 0;
+}
+header .headerContent {
+  display: flex;
+  flex-direction: row;
+}
+header .headerContent .headerHeading {
+  width: 100%;
+}
+header .headerContent .headerHeading h1 {
+  margin: 0 auto;
+}
+header .headerContent .headerHeading p {
+  margin: 0 auto;
+}
+header .headerContent .headerImage {
+  width: 100%;
+}
+header .headerContent .headerImage img {
+  height: 5 rem;
+  width: 5 rem;
 }
 
 .about {
   background-color: #2D2D44;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   color: #ffffff;
 }
 .about .aboutMeContainer {
@@ -283,7 +304,7 @@ header {
 .skills {
   background-color: #60C689;
   color: #000000;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
 }
 .skills .skillsContainer {
   display: flex;
@@ -320,10 +341,18 @@ header {
   text-align: left;
   margin: 0;
 }
+.skills .skillsContainer .skillsListContainer .noIconList li {
+  display: revert;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem;
+  margin: 0 1rem;
+}
 
 .projects {
   color: #ffffff;
   background-color: #1E1E2C;
+  padding: 2.5rem 0;
 }
 
 .projectGallery {
@@ -411,7 +440,11 @@ header {
   margin: 0 auto;
 }
 .getInTouchContainer .formContainer ul li .svg {
-  color: #1E1E2C;
+  fill: #60C689;
+  transition: 0.5s;
+}
+.getInTouchContainer .formContainer ul li .svg:hover, .getInTouchContainer .formContainer ul li .svg:focus {
+  fill: #ffffff;
 }
 .getInTouchContainer .formInput {
   width: 100%;

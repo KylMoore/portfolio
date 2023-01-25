@@ -30,7 +30,13 @@
                 margin: 0 auto;
 
                 .svg {
-                    color: $primary;
+                    fill: $tertiary;
+                    transition: 0.5s;
+
+                    &:hover,
+                    &:focus {
+                        fill: $fontPrimaryColor;
+                    }
                 }
             }
         }

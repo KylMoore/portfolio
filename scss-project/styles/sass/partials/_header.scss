@@ -3,4 +3,31 @@
 header {
     background-color: $primary;
     color: $fontPrimaryColor;
+    padding: 2.5rem 0;
+
+    .headerContent {
+        display: flex;
+        flex-direction: row;
+
+        .headerHeading {
+            width: 100%;
+
+            h1 {
+                margin: 0 auto;
+            }
+
+            p {
+                margin: 0 auto;
+            }
+        }
+
+        .headerImage {
+            width: 100%;
+
+            img {
+                height: 5 rem;
+                width: 5 rem;
+            }
+        }
+    }
 }

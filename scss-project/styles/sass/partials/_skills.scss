@@ -3,7 +3,7 @@
 .skills {
     background-color: $tertiary;
     color: $fontSecondaryColor;
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 
     .skillsContainer {
         display: flex;
@@ -40,8 +40,19 @@
 
                     p {
                         text-align: left;
-                        margin: 0 ;
+                        margin: 0;
                     }
+                }
+            }
+
+            .noIconList {
+
+                li {
+                    display: revert;
+                    align-items: center;
+                    align-content: center;
+                    padding: 0.5rem;
+                    margin: 0 1rem;
                 }
             }
         }
