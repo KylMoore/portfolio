@@ -410,23 +410,23 @@ header {
   height: 1.5rem;
   margin: 0 auto;
 }
-.getInTouchContainer .formContainer ul li svg {
-  color: #2D2D44;
+.getInTouchContainer .formContainer ul li .svg {
+  color: #1E1E2C;
 }
 .getInTouchContainer .formInput {
   width: 100%;
 }
-.getInTouchContainer .formInput form {
+.getInTouchContainer .formInput .form {
   display: flex;
   flex-direction: column;
   margin: 2rem;
 }
-.getInTouchContainer .formInput form input {
+.getInTouchContainer .formInput .form input {
   margin: 1rem auto;
   padding: 0.5rem;
   width: 100%;
 }
-.getInTouchContainer .formInput form button {
+.getInTouchContainer .formInput .form button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -438,9 +438,16 @@ header {
   border: none;
   transition: 0.5s;
 }
-.getInTouchContainer .formInput form button:hover, .getInTouchContainer .formInput form button:focus {
+.getInTouchContainer .formInput .form button:hover, .getInTouchContainer .formInput .form button:focus {
   color: #ffffff;
   background-color: #1E1E2C;
+}
+.getInTouchContainer .formInput .form textarea {
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+  height: 25vh;
+  margin: 1rem auto;
 }
 
 .navContainer {
