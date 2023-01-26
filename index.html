@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Tillana&family=Work+Sans&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./scss-project/styles/sass/styles.css">
+    <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         <div class="bodyWrapper">
             <div class="aboutMeContainer">
                 <div class="aboutMeImageContainer">
-                    <img src="" alt="Picture of me">
+                    <img src="./assets/Fry.jpg" alt="Picture of me">
                 </div>
                 <div class="aboutMeInfoContainer">
                     <h2>About me</h2>
@@ -306,14 +306,15 @@
                     </ul>
                 </div>
                 <div class="formInput">
-                    <form class="form">
+                    <form id="form" class="form" action="https://formspree.io/f/mnqyjnba" method="POST">
                         <label for="name">Name</label>
                         <input type="text" name="name" placeholder="Name">
                         <label for="email">Email Address</label>
-                        <input type="text" name="email" placeholder="Email Address">
+                        <input type="email" name="email" placeholder="Email Address">
                         <label for="message">Message</label>
                         <textarea type="text" name="message" placeholder="Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="formSubmitButton">Submit</button>
+                        <p id="formStatus"></p>
                     </form>
                 </div>
             </div>
@@ -335,7 +336,7 @@
 
     <!-- Footer End -->
 
-
+<script src="./app.js"></script>
 </body>
 
 </html>
