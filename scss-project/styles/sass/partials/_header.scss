@@ -10,6 +10,9 @@ header {
         flex-direction: row;
 
         .headerHeading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             width: 100%;
 
             h1 {
@@ -22,11 +25,10 @@ header {
         }
 
         .headerImage {
-            width: 100%;
+            width: 15rem;
 
             img {
-                height: 5 rem;
-                width: 5 rem;
+                max-width: -moz-available;
             }
         }
     }

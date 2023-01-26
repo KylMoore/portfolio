@@ -264,6 +264,9 @@ header .headerContent {
   flex-direction: row;
 }
 header .headerContent .headerHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 header .headerContent .headerHeading h1 {
@@ -273,11 +276,10 @@ header .headerContent .headerHeading p {
   margin: 0 auto;
 }
 header .headerContent .headerImage {
-  width: 100%;
+  width: 15rem;
 }
 header .headerContent .headerImage img {
-  height: 5 rem;
-  width: 5 rem;
+  max-width: -moz-available;
 }
 
 .about {
@@ -459,6 +461,21 @@ header .headerContent .headerImage img {
   padding: 0.5rem;
   width: 100%;
 }
+.getInTouchContainer .formInput .form input::-moz-placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+}
+.getInTouchContainer .formInput .form input:-ms-input-placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+}
+.getInTouchContainer .formInput .form input::placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+}
 .getInTouchContainer .formInput .form button {
   display: flex;
   justify-content: flex-start;
@@ -481,6 +498,21 @@ header .headerContent .headerImage img {
   padding: 0.5rem;
   height: 25vh;
   margin: 1rem auto;
+}
+.getInTouchContainer .formInput .form textarea::-moz-placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+}
+.getInTouchContainer .formInput .form textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+}
+.getInTouchContainer .formInput .form textarea::placeholder {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
 }
 
 .navContainer {
