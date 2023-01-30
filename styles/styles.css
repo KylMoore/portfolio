@@ -381,6 +381,9 @@ header .headerContent .headerImage img {
 .about .aboutMeContainer .aboutMeInfoContainer {
   width: 75%;
 }
+.about .aboutMeContainer .aboutMeInfoContainer p {
+  text-transform: none;
+}
 
 .skills {
   background-color: #60C689;
@@ -398,6 +401,9 @@ header .headerContent .headerImage img {
 }
 .skills .skillsContainer .skillsHeadingContainer {
   width: 35%;
+}
+.skills .skillsContainer .skillsHeadingContainer p {
+  text-transform: none;
 }
 .skills .skillsContainer .skillsListContainer {
   display: -webkit-box;
@@ -556,6 +562,9 @@ header .headerContent .headerImage img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.getInTouchContainer .formContainer p {
+  text-transform: none;
 }
 .getInTouchContainer .formContainer ul {
   display: -webkit-box;

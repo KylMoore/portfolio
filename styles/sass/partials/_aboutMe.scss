@@ -23,6 +23,10 @@
 
         .aboutMeInfoContainer {
             width: 75%;
+
+            p {
+                text-transform: none;
+            }
         }
     }
 }
