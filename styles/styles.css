@@ -259,6 +259,54 @@ html {
   max-width: 1080px;
 }
 
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+.navContainer h2 {
+  font-size: 1.5rem;
+}
+.navContainer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.navContainer nav ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.navContainer nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navContainer nav ul li a:hover, .navContainer nav ul li a:focus {
+  background-color: #2D2D44;
+  color: #33E1ED;
+}
+.navContainer nav ul li .navButton {
+  background-color: #33E1ED;
+  color: #000000;
+}
+
 header {
   background-color: #1E1E2C;
   color: #ffffff;
@@ -319,8 +367,16 @@ header .headerContent .headerImage img {
   width: 25%;
 }
 .about .aboutMeContainer .aboutMeImageContainer img {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .about .aboutMeContainer .aboutMeInfoContainer {
   width: 75%;
@@ -631,62 +687,6 @@ header .headerContent .headerImage img {
   font-family: "Work Sans", sans-serif;
 }
 
-.navContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-}
-.navContainer h2 {
-  font-size: 1.5rem;
-}
-.navContainer nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-.navContainer nav ul li {
-  list-style: none;
-  padding: 0.5rem;
-}
-.navContainer nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 0.5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.navContainer nav ul li a:hover, .navContainer nav ul li a:focus {
-  background-color: #2D2D44;
-  color: #33E1ED;
-}
-.navContainer nav ul li button {
-  background-color: #33E1ED;
-  color: #000000;
-  padding: 0.5rem 1rem;
-  border: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.navContainer nav ul li button:hover, .navContainer nav ul li button:focus {
-  color: #33E1ED;
-  background-color: #2D2D44;
-}
-
 footer {
   padding: 1rem;
   color: #ffffff;
@@ -695,4 +695,208 @@ footer {
 footer p {
   padding-left: 0;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .headerHeading p {
+    margin-left: 0;
+  }
+  .skillsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects h2 {
+    text-align: center;
+  }
+  .projects .projectGallery ul {
+    padding: 0;
+  }
+  .projects .projectGallery li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectGallery li .projectImageContainer {
+    padding: 0;
+  }
+  .projects .projectContentContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .projectContentContainer p {
+    text-align: center;
+  }
+  .projects .projectContentContainer button {
+    margin: 0.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutMeContainer h2 {
+    text-align: center;
+  }
+  .skillsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skillsContainer .skillsHeadingContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 625px) {
+  .wrapper {
+    width: 95%;
+  }
+  .bodyWrapper {
+    width: 90%;
+  }
+  header .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .headerContent .headerImage {
+    margin: 1rem;
+  }
+  .about {
+    padding: 1rem;
+  }
+  .about .aboutMeContainer .aboutMeInfoContainer {
+    width: 100%;
+  }
+  .skills {
+    padding: 0;
+  }
+  .skills h2 {
+    text-align: center;
+  }
+  .projects {
+    padding: 0;
+  }
+  .getInTouch {
+    padding: 0;
+  }
+  .getInTouch .getInTouchContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouch .getInTouchContainer .formContainer {
+    width: 100%;
+  }
+  .getInTouch .getInTouchContainer .formContainer h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 585px) {
+  .wrapper {
+    width: 100%;
+  }
+  .navContainer {
+    padding: 0.5rem 0;
+  }
+  .navContainer h2 {
+    display: none;
+  }
+  .navContainer nav {
+    width: 100%;
+  }
+  .navContainer nav ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navContainer nav ul li {
+    padding: 0.25rem;
+  }
+  .navContainer nav ul li a {
+    padding: 0.25rem;
+  }
+  .about .aboutMeContainer .aboutMeImageContainer {
+    width: auto;
+  }
+  .skills .skillsContainer .skillsListContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .skills .skillsContainer .skillsListContainer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skills .skillsContainer .skillsListContainer ul li {
+    padding: 0.25rem;
+  }
+  .skills .skillsContainer .skillsListContainer .noIconList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .projectGallery li .projectImageContainer {
+    width: 65%;
+  }
+  .projectGallery li .projectContentContainer {
+    width: 100%;
+  }
+  .getInTouch .getInTouchContainer .formContainer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 350px) {
+  .navContainer nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projectGallery li .projectContentContainer h4 {
+    font-size: 0.75rem;
+  }
+  .projectGallery li .projectContentContainer button {
+    font-size: 0.75rem;
+  }
 }

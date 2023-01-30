@@ -19,7 +19,7 @@
         li {
             list-style: none;
             padding: .5rem;
-            
+
             a {
                 text-decoration: none;
                 color: $fontPrimaryColor;
@@ -33,18 +33,9 @@
                 }
             }
 
-            button {
+            .navButton {
                 background-color: $quaternary;
                 color: $fontSecondaryColor;
-                padding: .5rem 1rem;
-                border: none;
-                transition: 0.5s;
-
-                &:hover, 
-                &:focus {
-                    color: $quaternary;
-                    background-color: $secondary;
-                }
             }
         }
     }

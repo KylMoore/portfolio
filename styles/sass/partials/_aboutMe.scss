@@ -4,18 +4,20 @@
     background-color: $secondary;
     padding: 2.5rem 0;
     color: $fontPrimaryColor;
-
+    
     .aboutMeContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         .aboutMeImageContainer {
             width: 25%;
-
+            
             img {
-                width: 10rem;
-                height: 10rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 

@@ -1,0 +1,244 @@
+@media (max-width: 900px) {
+
+    .headerHeading {
+
+        p {
+            margin-left: 0;
+        }
+    }
+
+    .skillsContainer {
+        flex-direction: column;
+    }
+
+
+    .projects {
+
+        h2 {
+            text-align: center;
+        }
+
+        .projectGallery ul {
+            padding: 0;
+        }
+
+        .projectGallery li {
+            flex-direction: column;
+
+            .projectImageContainer {
+                padding: 0;
+            }
+        }
+
+        .projectContentContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+
+            button {
+                margin: .25rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .aboutMeContainer {
+        flex-direction: column-reverse;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .skillsContainer {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .skills .skillsContainer .skillsHeadingContainer {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 625px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .bodyWrapper {
+        width: 90%;
+    }
+
+    header {
+
+        .headerContent {
+            flex-direction: column;
+            align-items: center;
+
+            .headerImage {
+                margin: 1rem;
+            }
+        }
+    }
+
+    .about {
+        padding: 1rem;
+
+        .aboutMeContainer {
+
+            .aboutMeInfoContainer {
+                width: 100%;
+            }
+        }
+    }
+
+    .skills {
+        padding: 0;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .projects {
+        padding: 0;
+    }
+
+    .getInTouch {
+        padding: 0;
+
+        .getInTouchContainer {
+            flex-direction: column;
+
+            .formContainer {
+                width: 100%;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 585px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .navContainer {
+        padding: 0.5rem 0;
+
+        h2 {
+            display: none;
+        }
+
+        nav {
+            width: 100%;
+
+            ul {
+                padding: 0;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                li {
+                    padding: 0.25rem;
+
+                    a {
+                        padding: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .about .aboutMeContainer .aboutMeImageContainer {
+        width: auto;
+    }
+
+    .skills {
+
+        .skillsContainer {
+
+            .skillsListContainer {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                ul {
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    flex-direction: row;
+
+                    li {
+                        padding: 0.25rem;
+                    }
+                }
+
+                .noIconList {
+                    flex-direction: column;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .projectGallery {
+
+        li {
+
+            .projectImageContainer {
+                width: 65%;
+            }
+
+            .projectContentContainer {
+                width: 100%;
+            }
+        }
+    }
+
+    .getInTouch {
+
+        .getInTouchContainer {
+
+            .formContainer {
+
+                ul {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .navContainer nav ul {
+        flex-wrap: wrap;
+    }
+
+    .projectGallery li .projectContentContainer h4 {
+        font-size: 0.75rem;
+    }
+
+    .projectGallery li .projectContentContainer button {
+        font-size: 0.75rem;
+    }
+
+}
