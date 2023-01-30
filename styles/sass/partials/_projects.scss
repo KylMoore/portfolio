@@ -24,6 +24,7 @@
             img {
                 max-height: 15rem;
                 max-width: 15rem;
+                border-radius: 2.5%;
             }
         }
 
@@ -45,6 +46,7 @@
                 background-color: $quaternary;
                 color: $fontSecondaryColor;
                 padding: .5rem 1rem;
+                width: 49%;
                 border: none;
                 transition: 0.5s;
 
