@@ -888,7 +888,7 @@ footer p {
             justify-content: center;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .navContainer nav ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
