@@ -7,8 +7,33 @@
         }
     }
 
-    .skillsContainer {
-        flex-direction: column;
+    .skills {
+
+        .skillsContainer {
+            // flex-direction: column;
+            
+            .skillsHeadingContainer {
+                width: 35%;
+                // display: flex;
+                // flex-direction: column;
+                // width: 100%;
+                // justify-content: center;
+                // align-items: center;
+            
+                h2 {
+                width: 20%;
+                // margin: 1rem;
+                }
+            
+                p {
+                width: 80%;
+                }
+            }
+
+            .skillsListContainer {
+                width: 65%;
+            }
+        }
     }
 
 
@@ -27,6 +52,7 @@
 
             .projectImageContainer {
                 padding: 0;
+                text-align: center;
             }
         }
 
@@ -35,6 +61,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .buttonContainer {
+                display: flex;
+                width: 100%;
+            }
 
             p {
                 text-align: center;
@@ -46,9 +77,6 @@
         }
     }
 }
-
-
-
 
 @media (max-width: 800px) {
 
@@ -70,6 +98,34 @@
         width: 100%;
     }
 
+                .skills {
+        
+                    .skillsContainer {
+                        // flex-direction: column;
+        
+                        .skillsHeadingContainer {
+                            width: 35%;
+                            // display: flex;
+                            // flex-direction: column;
+                            // width: 100%;
+                            // justify-content: center;
+                            // align-items: center;
+        
+                            h2 {
+                                width: 20%;
+                                // margin: 1rem;
+                            }
+        
+                            p {
+                                width: 80%;
+                            }
+                        }
+        
+                        .skillsListContainer {
+                            width: 65%;
+                        }
+                    }
+                }
 
 }
 

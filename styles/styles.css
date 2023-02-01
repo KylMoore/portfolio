@@ -616,6 +616,7 @@ header .headerContent .headerImage img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  padding-left: 1rem;
 }
 .getInTouchContainer .formInput .form input {
   margin: 1rem auto;
@@ -717,11 +718,17 @@ footer p {
   .headerHeading p {
     margin-left: 0;
   }
-  .skillsContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .skills .skillsContainer .skillsHeadingContainer {
+    width: 35%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer h2 {
+    width: 20%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer p {
+    width: 80%;
+  }
+  .skills .skillsContainer .skillsListContainer {
+    width: 65%;
   }
   .projects h2 {
     text-align: center;
@@ -737,6 +744,7 @@ footer p {
   }
   .projects .projectGallery li .projectImageContainer {
     padding: 0;
+    text-align: center;
   }
   .projects .projectContentContainer {
     display: -webkit-box;
@@ -752,6 +760,12 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .projects .projectContentContainer .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
   }
   .projects .projectContentContainer p {
     text-align: center;
@@ -780,6 +794,18 @@ footer p {
   }
   .skills .skillsContainer .skillsHeadingContainer {
     width: 100%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer {
+    width: 35%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer h2 {
+    width: 20%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer p {
+    width: 80%;
+  }
+  .skills .skillsContainer .skillsListContainer {
+    width: 65%;
   }
 }
 @media (max-width: 625px) {
