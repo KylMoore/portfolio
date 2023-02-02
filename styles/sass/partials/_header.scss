@@ -1,13 +1,32 @@
 @use "./variables" as *;
 
+.backgroundImage {
+    background-image: url(../../../assets/IMG-6784.jpg);
+    height: 50vh;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 40%;
+    z-index: -1;
+}
+
 header {
-    background-color: $primary;
+    background-color: $primary ;
     color: $fontPrimaryColor;
-    padding: 2.5rem 0;
+    padding: 0;
+    height: 50vh;
+    display: flex;
+    align-items: center;
 
     .headerContent {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
 
         .headerHeading {
             display: flex;
@@ -17,6 +36,8 @@ header {
 
             h1 {
                 margin: 0 auto;
+                color: $fontPrimaryColor;
+                opacity: 100%;
             }
 
             p {
@@ -28,7 +49,7 @@ header {
             width: 15rem;
 
             img {
-                max-width: 15rem;
+                width: 100%;
                 border-radius: 2.5%;
             }
         }
