@@ -80,14 +80,34 @@
 
 @media (max-width: 800px) {
 
-    .aboutMeContainer {
-        flex-direction: column-reverse;
-
-        h2 {
-            text-align: center;
-        }
+    header {
+        height: 40vh;
     }
 
+    .about {
+        
+        .aboutMeContainer {
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+            }
+
+            .aboutMeInfoContainer {
+                width: 100%;
+            }
+
+            .aboutMeImageContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 15rem;
+                }
+            }
+        }
+    }
     .skillsContainer {
         justify-content: center;
         align-items: center;
@@ -113,11 +133,11 @@
         
                             h2 {
                                 width: 20%;
-                                // margin: 1rem;
+                                margin: 1rem 0;
                             }
         
                             p {
-                                width: 80%;
+                                width: 100%;
                             }
                         }
         
@@ -152,9 +172,16 @@
     }
 
     .about {
-        padding: 1rem;
+        padding: 1rem 0;
 
         .aboutMeContainer {
+
+            .aboutMeImageContainer {
+                
+                img {
+                    width: 10rem;
+                }
+            }
 
             .aboutMeInfoContainer {
                 width: 100%;
@@ -171,14 +198,28 @@
     }
 
     .projects {
-        padding: 0;
+        padding: 0.5rem 0;
+
+        .projectGallery {
+
+            li {
+
+                .projectImageContainer {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .getInTouch {
-        padding: 0;
+        padding: 0.5rem 0;
 
         .getInTouchContainer {
             flex-direction: column;
+
+            .form {
+                padding-left: 0;
+            }
 
             .formContainer {
                 width: 100%;
@@ -229,10 +270,22 @@
     }
 
     .skills {
+        padding: 1rem 0;
 
         .skillsContainer {
+            flex-direction: column;
+
+            .skillsHeadingContainer {
+                width: 100%;
+
+                h2 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
 
             .skillsListContainer {
+                width: 100%;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
 
@@ -259,7 +312,7 @@
         li {
 
             .projectImageContainer {
-                width: 65%;
+                width: 100%;
             }
 
             .projectContentContainer {

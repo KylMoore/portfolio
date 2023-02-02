@@ -286,6 +286,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
   margin: 0 auto;
 }
 .navContainer nav ul li {
@@ -806,14 +807,32 @@ footer p {
   }
 }
 @media (max-width: 800px) {
-  .aboutMeContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  header {
+    height: 40vh;
   }
-  .aboutMeContainer h2 {
+  .about .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutMeContainer h2 {
     text-align: center;
+  }
+  .about .aboutMeContainer .aboutMeInfoContainer {
+    width: 100%;
+  }
+  .about .aboutMeContainer .aboutMeImageContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .aboutMeContainer .aboutMeImageContainer img {
+    width: 15rem;
   }
   .skillsContainer {
     -webkit-box-pack: center;
@@ -831,9 +850,10 @@ footer p {
   }
   .skills .skillsContainer .skillsHeadingContainer h2 {
     width: 20%;
+    margin: 1rem 0;
   }
   .skills .skillsContainer .skillsHeadingContainer p {
-    width: 80%;
+    width: 100%;
   }
   .skills .skillsContainer .skillsListContainer {
     width: 65%;
@@ -859,7 +879,10 @@ footer p {
     margin: 1rem;
   }
   .about {
-    padding: 1rem;
+    padding: 1rem 0;
+  }
+  .about .aboutMeContainer .aboutMeImageContainer img {
+    width: 10rem;
   }
   .about .aboutMeContainer .aboutMeInfoContainer {
     width: 100%;
@@ -871,16 +894,22 @@ footer p {
     text-align: center;
   }
   .projects {
-    padding: 0;
+    padding: 0.5rem 0;
+  }
+  .projects .projectGallery li .projectImageContainer {
+    width: 100%;
   }
   .getInTouch {
-    padding: 0;
+    padding: 0.5rem 0;
   }
   .getInTouch .getInTouchContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .getInTouch .getInTouchContainer .form {
+    padding-left: 0;
   }
   .getInTouch .getInTouchContainer .formContainer {
     width: 100%;
@@ -923,7 +952,24 @@ footer p {
   .about .aboutMeContainer .aboutMeImageContainer {
     width: auto;
   }
+  .skills {
+    padding: 1rem 0;
+  }
+  .skills .skillsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .skillsContainer .skillsHeadingContainer {
+    width: 100%;
+  }
+  .skills .skillsContainer .skillsHeadingContainer h2 {
+    width: 100%;
+    text-align: center;
+  }
   .skills .skillsContainer .skillsListContainer {
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
@@ -950,7 +996,7 @@ footer p {
     padding: 1rem;
   }
   .projectGallery li .projectImageContainer {
-    width: 65%;
+    width: 100%;
   }
   .projectGallery li .projectContentContainer {
     width: 100%;
