@@ -520,6 +520,7 @@ header .headerContent .headerImage img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -528,10 +529,19 @@ header .headerContent .headerImage img {
 .projectGallery li .projectImageContainer {
   width: 35%;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projectGallery li .projectImageContainer img {
-  max-height: 15rem;
-  max-width: 15rem;
+  max-height: 10rem;
+  max-width: 10rem;
   border-radius: 2.5%;
 }
 .projectGallery li .projectContentContainer {
@@ -545,6 +555,7 @@ header .headerContent .headerImage img {
 .projectGallery li .projectContentContainer h4 {
   color: rgba(51, 225, 237, 0.9);
   margin: 0 auto;
+  text-align: center;
 }
 .projectGallery li .projectContentContainer button {
   background-color: rgba(51, 225, 237, 0.9);
